@@ -6,7 +6,6 @@ containers:
             install:
                 commands:
                     - echo Starting the Docker service...
-                    - service docker start
                     - echo Nothing to do in the install phase..
             pre_build:
                 commands:
@@ -20,5 +19,4 @@ containers:
             post_build:
                 commands:
                     - echo Build completed on  `date`
-                    - service docker stop
             
