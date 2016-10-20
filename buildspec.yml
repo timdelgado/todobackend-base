@@ -2,7 +2,7 @@ version: 0.0
 
 containers:
     main:
-        phasess:
+        phases:
             install:
                 commands:
                     - echo Starting the Docker service...
@@ -16,7 +16,7 @@ containers:
                 commands:
                     - echo Entering during_build phase...
                     - echo Build started on `date`
-                    - docker build -t todobackend-base 
+                    - docker build -t todobackend-base .
             post_build:
                 commands:
                     - echo Build completed on  `date`
