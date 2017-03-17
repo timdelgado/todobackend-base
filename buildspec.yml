@@ -15,8 +15,6 @@ containers:
                 commands:
                     - echo Entering during_build phase...
                     - echo Build started on `date`
-                    - docker images
-                    - docker ps -a
                     - docker build -t todobackend-base .
             post_build:
                 commands:
