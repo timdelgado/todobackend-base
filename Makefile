@@ -13,6 +13,7 @@ INFO := @bash -c 'printf $(YELLOW); echo "=> $$1"; printf $(NC)' VALUE
 .PHONY: build
 
 build:
-	${INFO} "Building application artifacts..."
-	docker build -t todobackend:latest .
-	${INFO} "Build complete"
+	echo "hello world"
+#	${INFO} "Building application artifacts..."
+#	docker build -t todobackend:latest .
+#	${INFO} "Build complete"
